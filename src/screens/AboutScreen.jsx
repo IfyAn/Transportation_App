@@ -5,10 +5,10 @@ import colors from "../components/colors";
 export default function AboutScreen ({ navigation }) {
   return (
     <View style={styles.container}>
-<Text style={{color: colors.danger}}>This is About screen</Text>
+<Text style={{color: colors.danger}}>This is About Page</Text>
       <Button
         title='Go To Explore screen'
-        onPress={() => navigation.navigate("History")}
+        onPress={() => navigation.navigate('About')}
       />
     </View>
   );
