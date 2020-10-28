@@ -111,8 +111,8 @@ marginRight:40
   Containerr: {
  top:25,
   alignSelf:'center',
-  borderBottomWidth:6,
-  borderBottomColor:colors.ash,
+  // borderBottomWidth:6,
+  // borderBottomColor:colors.ash,
   height:160,
   width:320,
   backgroundColor:colors.white
@@ -464,7 +464,7 @@ marginRight:40
   title:{
     flexDirection:'row',
     justifyContent:'space-around',
-    top: 20,
+    marginTop: hp(25),
     borderBottomWidth:2,
     color:colors.light_grey,
     borderBottomColor:colors.light_grey,

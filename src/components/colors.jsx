@@ -15,7 +15,11 @@ export default {
     orange: '#FFCC2F',
     newBlack: '#253855',
     newGray: '#586F94',
-    lightGray: '#8E8E93'
+    lightGray: '#8E8E93',
+    grey: '#C4C4C4',
+    grayThird: '#828282',
+
+
 
 
 
