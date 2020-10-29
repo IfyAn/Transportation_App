@@ -49,13 +49,6 @@ export default function SettingScreen({ navigation }) {
       <View style={styles.box} >
         <Text style={styles.ApText}>Log out</Text>
       </View>
-      {/* <Setting 
-         second='Legal' third='Read out terms and conditions' seperator={styles.seperator}
-           onPress 
-           row={styles.card}  />
-           <Setting 
-         second='Logout' 
-           onPress  /> */}
     </SafeAreaView>
   );
 };

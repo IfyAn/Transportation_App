@@ -69,14 +69,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-evenly',
     paddingRight: 80,
     paddingVertical: 12,
-    //height:70,
   },
   carrdd: {
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     paddingRight: 25,
     paddingVertical: 12,
-    //height:70,
   },
   cardd: {
     backgroundColor: colors.white,
@@ -109,12 +107,10 @@ marginRight:40
     backgroundColor: colors.light_grey,
   },
   Containerr: {
- top:25,
-  alignSelf:'center',
-  borderBottomWidth:6,
-  borderBottomColor:colors.ash,
-  height:160,
-  width:320,
+ marginTop:hp(13.5),
+marginLeft:wp(15),
+  height:hp(169),
+  width:wp(344),
   backgroundColor:colors.white
 
   },
@@ -158,16 +154,15 @@ marginRight:40
     alignItems: "center",
   },
   detaill: {
-    marginLeft: 10,
-    paddingRight: 20,
+    marginLeft: wp(25),
+     //marginRight: 20,
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    //justifyContent: 'space-between',
   },
   detaills: {
-    paddingRight: 40,
-    paddingBottom: 15,
+    marginLeft: wp(25),
+    paddingTop: hp(18),
     flexDirection: 'row',
-    justifyContent: 'space-between',
     color:colors.light_grey
   },
   detailx: {
@@ -247,8 +242,11 @@ marginRight:40
     borderRadius: 5,
     left: 10
   },
+  Image:{
+    bottom:hp(10),
+    left:wp(28)
+  },
   imagee: {
-    paddingTop: 20,
     flexDirection: 'row'
   },
   image: {
@@ -266,7 +264,6 @@ marginRight:40
   },
   imageView:{
   flexDirection:'row', 
-  //justifyContent:'space-between', 
   paddingTop:12,
   paddingLeft:wp(16)
 },
@@ -292,14 +289,10 @@ marginRight:40
   joView:{
   paddingTop:hp(10),
     paddingLeft:wp(112),
-    //width:wp(152)
-    //height:hp(22)
   },
   letter:{
-    //flexDirection:'row',
    paddingTop:hp(8),
    alignSelf:"flex-start",
-
    paddingLeft:wp(16),
   // justifyContent:'space-around'
   },
@@ -414,7 +407,11 @@ marginRight:40
   search: {
     paddingLeft: 50
   },
-  Seat:{paddingRight:50, color:colors.gray},
+  Seat:{
+    bottom:hp(5),
+     color:colors.gray,
+     fontSize:17
+    },
   seperator: {
     borderBottomWidth: 3,
     paddingBottom: 70,
@@ -464,7 +461,7 @@ marginRight:40
   title:{
     flexDirection:'row',
     justifyContent:'space-around',
-    top: 20,
+    marginTop: hp(25),
     borderBottomWidth:2,
     color:colors.light_grey,
     borderBottomColor:colors.light_grey,
@@ -475,7 +472,11 @@ marginRight:40
     left: 116, 
     alignContent: 'center', 
   },
-  Trip: { bottom: 50, fontWeight: 'bold', fontSize: 18 },
+  Trip: { 
+    bottom: 50, 
+    fontWeight: 'bold', 
+    fontSize: 18 
+  },
   up:{
     flexDirection:'row',
      justifyContent:'space-around',
@@ -489,10 +490,8 @@ marginRight:40
   },
   Wit: { 
     flexDirection: 'row',
-    width: "100%", 
-   justifyContent: "space-around",
-   borderRadius: 3,
-   bottom:10
+    marginLeft:wp(25),
+    marginTop:hp(25),
   },
   ward:{
     left:wp(67),
@@ -510,7 +509,11 @@ marginRight:40
     paddingTop: 20,
     paddingLeft: 15
   },
-  V: { flexDirection: 'column', right: 1, bottom: 30, },
+  V: { 
+    flexDirection: 'column', 
+    right: 1, 
+    bottom: 30,
+   },
   view: {
     marginTop: hp(58),
     flexDirection: 'row',
