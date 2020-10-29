@@ -25,6 +25,7 @@ import NotificationScreen from "./src/screens/NotificationScreen";
 import SettingScreen from "./src/screens/SettingScreen";
 import HistoryScreen from "./src/screens/HistoryScreen";
 import RefferalScreen from "./src/screens/RefferalScreen";
+import LinkedScreen from "./src/screens/LinkedScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 
@@ -32,7 +33,7 @@ import AppNavigator from "./src/navigation/AppNavigator";
 //   return <AppNavigator /> ;
 // }
 export default function App() {
-  return <ThirdScheduledScreen /> ;
+  return <LinkedScreen /> ;
 }
 
 const styles = StyleSheet.create({
