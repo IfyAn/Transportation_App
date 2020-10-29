@@ -24,6 +24,7 @@ import RequestScreen from "./src/screens/RequestScreen";
 import NotificationScreen from "./src/screens/NotificationScreen";
 import SettingScreen from "./src/screens/SettingScreen";
 import HistoryScreen from "./src/screens/HistoryScreen";
+import RefferalScreen from "./src/screens/RefferalScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 

@@ -18,6 +18,9 @@ export default {
     lightGray: '#8E8E93',
     grey: '#C4C4C4',
     grayThird: '#828282',
+    rgba_blue: 'rgba(10, 132, 255, 0.075)',
+    lightGray: '#C7C7CC'
+
 
 
 

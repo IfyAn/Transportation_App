@@ -4,7 +4,6 @@ import Heading from "../components/Heading";
 import ListItemSeperator from "../components/ListItemSeperator"
 import Title from "../components/Title";
 import StartTrip from "../components/StartTrip";
-import StartTripp from "../components/StartTripp";
 import colors from "../components/colors";
 import { wp, hp } from "../config/Responsive";
 
@@ -13,9 +12,15 @@ export default function SecondScheduledScreen() {
     <View style={styles.container}>
     <Heading  image={require("../../assets/Menu.png")}  title='Schedule' />
     <Title left='All' center='Scheduled' right='Completed' first={styles.first} second={styles.second} />
-     <StartTrip />
+    <StartTrip head='Festac' middle='7.00am' header='Obalande'
+      avater={require("../../assets/cruise.png")} motor='Toyota Camry'
+      seats='5 seats' naira='N500' begin='Start Trip' end='Cancel Trip'
+      />
      <ListItemSeperator itemSeperator={styles.line} />
-     <StartTripp />
+     <StartTrip head='Festac' middle='7.00am' header='Obalande'
+      avater={require("../../assets/cruise.png")} motor='Toyota Camry'
+      seats='5 seats' naira='N500' begin='Start Trip' end='Cancel Trip'
+      />
      <ListItemSeperator itemSeperator={styles.line} />
      <View style={styles.view}></View>
     </View>
