@@ -27,6 +27,7 @@ import HistoryScreen from "./src/screens/HistoryScreen";
 import RefferalScreen from "./src/screens/RefferalScreen";
 import LinkedScreen from "./src/screens/LinkedScreen";
 import EditScreen from "./src/screens/EditScreen";
+import ManagementScreen from "./src/screens/ManagementScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 
@@ -34,7 +35,7 @@ import AppNavigator from "./src/navigation/AppNavigator";
 //   return <AppNavigator /> ;
 // }
 export default function App() {
-  return <EditScreen /> ;
+  return <ManagementScreen /> ;
 }
 
 const styles = StyleSheet.create({

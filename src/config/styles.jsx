@@ -346,6 +346,13 @@ marginLeft:wp(15),
     fontWeight: 'bold',
     top:hp(1)
   },
+  Offers: { 
+    paddingLeft:wp(31.25), 
+    fontWeight: 'bold',
+  },
+  Off: { 
+    paddingLeft:wp(93), 
+  },
   ojoText:{
     alignSelf:'flex-start', 
     fontWeight:'bold' ,
