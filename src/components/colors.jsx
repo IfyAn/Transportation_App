@@ -20,7 +20,13 @@ export default {
     grayThird: '#828282',
     rgba_blue: 'rgba(10, 132, 255, 0.075)',
     lightGray: '#C7C7CC',
-    newRed: '#FC4040'
+    newRed: '#FC4040',
+    brown: '#333333',
+    lightBlack: '#000000',
+    lightAsh: '#EFEFF4'
+
+
+
 
 
 

@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     left:wp(14)
   },
   avater:{
-    marginTop:hp(30),
+    marginTop:hp(23),
     marginLeft:wp(150),
     width:wp(74),
     height:hp(74)
@@ -352,6 +352,15 @@ marginLeft:wp(15),
     left:wp(16),
     paddingTop:hp(12)
     },
+    personalText:{
+      marginLeft:wp(23),
+      marginTop:hp(22),
+      fontSize:18,
+      color:colors.newBlack,
+      lineHeight:hp(21),
+      fontWeight:'bold',
+      height:hp(22)
+    },
   prex: {
     backgroundColor: colors.blue,
     width: 80,
@@ -371,6 +380,14 @@ marginLeft:wp(15),
     alignItems: 'center',
     borderRadius: 5,
     top: 20
+  },
+  profileText:{
+    marginLeft:wp(23),
+    marginTop:hp(35),
+    fontSize:18,
+    color:colors.newBlack,
+    lineHeight:hp(21),
+    fontWeight:'bold'
   },
   place:{
   flexDirection:'row', 
