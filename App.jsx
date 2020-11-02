@@ -28,6 +28,7 @@ import RefferalScreen from "./src/screens/RefferalScreen";
 import LinkedScreen from "./src/screens/LinkedScreen";
 import EditScreen from "./src/screens/EditScreen";
 import ManagementScreen from "./src/screens/ManagementScreen";
+import NewVehicleScreen from "./src/screens/NewVehicleScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 
@@ -35,7 +36,7 @@ import AppNavigator from "./src/navigation/AppNavigator";
 //   return <AppNavigator /> ;
 // }
 export default function App() {
-  return <ManagementScreen /> ;
+  return <NewVehicleScreen /> ;
 }
 
 const styles = StyleSheet.create({
