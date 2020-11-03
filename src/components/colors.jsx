@@ -24,6 +24,7 @@ export default {
     brown: '#333333',
     lightBlack: '#000000',
     lightAsh: '#EFEFF4',
+    ground: '#F9F9F9',
     lowGray: '#3C3C43'
 
 
