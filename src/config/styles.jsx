@@ -351,7 +351,7 @@ marginLeft:wp(15),
     fontWeight: 'bold',
   },
   Off: { 
-    paddingLeft:wp(93), 
+    paddingLeft:wp(70), 
   },
   ojoText:{
     alignSelf:'flex-start', 

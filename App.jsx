@@ -31,6 +31,7 @@ import ManagementScreen from "./src/screens/ManagementScreen";
 import NewVehicleScreen from "./src/screens/NewVehicleScreen";
 import DriverLicenseScreen from "./src/screens/DriverLicenseScreen";
 import DocumentScreen from "./src/screens/DocumentScreen";
+import NationalCardScreen from "./src/screens/NationalCardScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 
@@ -38,7 +39,7 @@ import AppNavigator from "./src/navigation/AppNavigator";
 //   return <AppNavigator /> ;
 // }
 export default function App() {
-  return <DriverLicenseScreen /> ;
+  return <NationalCardScreen /> ;
 }
 
 const styles = StyleSheet.create({
