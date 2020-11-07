@@ -32,6 +32,7 @@ import NewVehicleScreen from "./src/screens/NewVehicleScreen";
 import DriverLicenseScreen from "./src/screens/DriverLicenseScreen";
 import DocumentScreen from "./src/screens/DocumentScreen";
 import NationalCardScreen from "./src/screens/NationalCardScreen";
+import SaveTripScreen from "./src/screens/SaveTripScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 
 
@@ -39,7 +40,7 @@ import AppNavigator from "./src/navigation/AppNavigator";
 //   return <AppNavigator /> ;
 // }
 export default function App() {
-  return <NationalCardScreen /> ;
+  return <SaveTripScreen /> ;
 }
 
 const styles = StyleSheet.create({

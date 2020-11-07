@@ -45,8 +45,6 @@ export default function StartTrip({
 const styles = StyleSheet.create({
   cancel:{
     alignSelf:'center',
-    //alignContent:'center',
-    //justifyContent:'center',
     fontSize:12,
     color:colors.blue
     },
@@ -94,14 +92,14 @@ start:{
   },
 touch:{  
   height:hp(35), 
-  width:wp(130), 
+  width:wp(134), 
   backgroundColor: colors.blue,  
   borderRadius: wp(5),
   justifyContent:'center',
 },
 untouch:{
   height:hp(35), 
-  width:wp(130), 
+  width:wp(134), 
   backgroundColor: colors.white, 
   borderWidth: 1, 
   borderColor: colors.blue,
