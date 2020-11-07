@@ -15,7 +15,7 @@ export default function SaveTripScreen() {
       seats='5 seats' naira='N500' begin='Activate Trip' end='Delete Trip'
       container={styles.contain} Seat={styles.seat} price={styles.naira} carText={styles.car}
       />
-     <ListItemSeperator itemSeperator={styles.line} />
+    
      <StartTrip head='Festac' middle='7.00am' header='Obalande'
       avater={require("../../assets/cruise.png")} motor='Toyota Camry'
       seats='5 seats' naira='N500' begin='Activate Trip' end='Delete Trip'

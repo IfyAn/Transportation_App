@@ -13,7 +13,7 @@ import ThirdScheduledScreen from "../screens/ThirdScheduledScreen";
 import WalletScreen from "../screens/WalletScreen";
 import HistoryScreen from "../screens/HistoryScreen";
 import RefferalScreen from "../screens/RefferalScreen";
-import SaveTripScreen from "../screens/SaveTripScreen";
+import SaveTripScreen from "../screens/NewSaveTripScreen";
 import BookingScreen from "../screens/BookingScreen";
 import AboutScreen from "../screens/AboutScreen";
 import SettingScreen from "../screens/SettingScreen";
