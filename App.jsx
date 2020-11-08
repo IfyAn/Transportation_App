@@ -32,7 +32,7 @@ import NewVehicleScreen from "./src/screens/NewVehicleScreen";
 import DriverLicenseScreen from "./src/screens/DriverLicenseScreen";
 import DocumentScreen from "./src/screens/DocumentScreen";
 import NationalCardScreen from "./src/screens/NationalCardScreen";
-import SaveTripScreen from "./src/screens/SaveTripScreen";
+//import SavedTripScreen from "./src/screens/SavedTripScreen";
 import NewSaveTripScreen from "./src/screens/NewSaveTripScreen";
 import AppNavigator from "./src/navigation/AppNavigator";
 

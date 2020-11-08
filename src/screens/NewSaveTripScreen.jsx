@@ -1,87 +1,226 @@
-import React from "react";
-import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
-import Heading from "../components/Heading";
-import ListItemSeperator from "../components/ListItemSeperator"
-import StartTrip from "../components/StartTrip";
+import React, { useState }from 'react';
+import { View, Text, StyleSheet, Image, Modal,  TouchableOpacity, ScrollView, SafeAreaView, TextInput } from 'react-native';
+import Styles from "../config/styles";
 import colors from "../components/colors";
-import { wp, hp } from "../config/Responsive";
+import InputText from "../components/InputText";
+import ApText from '../components/ApText';
+import AppButton from "../components/AppButton";
+import Headed from "../components/Headed";
+import { wp, hp } from "../config/Responsive"
 
-export default function SaveTripScreen() {
+export default function NewSaveTripScreen({ navigation }) {
+    const [modalVisible, setModalVisible] = useState(false);
   return (
-    <View style={styles.container}>
-    <Heading  icon='menu' title='Saved Trips' headed={styles.headed} />
-    <StartTrip head='Festac' middle='7.00am' header='Obalande'
-      avater={require("../../assets/cruise.png")} motor='Toyota Camry'
-      seats='5 seats' naira='N500' begin='Activate Trip' end='Delete Trip'
-      container={styles.contain} Seat={styles.seat} price={styles.naira} carText={styles.car}
-      />
-    
-     <StartTrip head='Festac' middle='7.00am' header='Obalande'
-      avater={require("../../assets/cruise.png")} motor='Toyota Camry'
-      seats='5 seats' naira='N500' begin='Activate Trip' end='Delete Trip'
-      cancel={styles.cancel} untouch={styles.untouch}
-      Seat={styles.seat} price={styles.naira} carText={styles.car}
-      />
-      <TouchableOpacity style={styles.touch} onPress={() =>console.log('Cancel')}>
-        <Text style={styles.text}>Add New Saved Trip</Text>
-      </TouchableOpacity>
-      <ListItemSeperator itemSeperator={styles.lines} />
-    </View>
-  );
+    <ScrollView style={styles.container}>
+    <Modal
+        animationType="slide"
+        transparent={true}
+        visible={modalVisible}
+        onRequestClose={() => {
+          Alert.alert("Modal has been closed.");
+        }}
+      >
+        <View style={styles.centeredView}>
+          <View style={styles.modalView}>
+            <View style={styles.Image}>
+               <Image source={require("../../assets/trip.png")}  />
+            </View>
+            <Text style={styles.modalText}>New Trip Save</Text>
+            <View style={styles.modalStyle}>
+              <Text style={styles.textStyle}>Your new saved trip has been created you can 
+                activate from the saved trips panel from the sidebar</Text>
+            </View>
+              <AppButton buttonStyle={styles.openButton} title='Done' textStyle={{fontSize:12}}
+              onPress={() => { setModalVisible(!modalVisible) }}
+               />
+            </View>
+        </View>
+      </Modal>
+      <Headed icon='keyboard-backspace' title='New Saved Trip' onPress={() => navigation.navigate("Scheduled")}  />
+     <View style={Styles.seperator1}>
+            <View style={Styles.Icon1}>
+                <View style={{paddingTop:20}}>
+                <Image source={require("../../assets/fieldCircle.png")}  />
+                </View>
+                <View style={{width: 300, alignItems: 'center'}}>
+                <InputText  placeholder= 'Enter Your Starting Post'   boxStyle={{height:50, width: 280, right:10}} />
+                </View>
+            </View>
+            <View style={{paddingLeft:38, paddingTop:35}}>
+            <Image source={require("../../assets/dotLine.png")}  />
+            </View>
+            <View style={Styles.Icon2}>
+                <View style={{paddingTop:20}}>
+                <Image source={require("../../assets/inlineCircle.png")}  />
+                </View>
+                <View style={{width: 300, alignItems: 'center'}}>
+                 <InputText  placeholder= 'Enter Drop off Post'  boxStyle={{height:50, width: 280, right:10}}/>
+                </View>
+             </View>
+            </View>
+        <Text style={styles.depart}>Departure Time</Text>
+        <View style={styles.departure}>
+            <Image source={require("../../assets/timee.png")} style={{top:hp(7)}}/>
+            <View style={styles.departCon}>
+              <TextInput />
+              <View style={styles.line} />
+              <Image source={require("../../assets/calender.png")} style={{left:hp(12.5)}} />
+            </View>
+        </View>
+        <Text style={styles.vehicle}>Vehicle (change vehicle from profile)</Text>
+        <View style={styles.departure}>
+            <Image source={require("../../assets/timee.png")} style={{top:hp(7)}}/>
+            <View style={styles.departCon}>
+              <TextInput placeholder='Audi 950 2020' />
+            </View>
+        </View>
+        <Text style={styles.vehicles}>Available Seats</Text>
+        <View style={styles.departure}>
+            <Image source={require("../../assets/timee.png")} style={{top:hp(7)}}/>
+            <View style={styles.departCon}>
+              <TextInput placeholder='Select available seat' />
+            </View>
+        </View>
+        <Text style={styles.vehicles}>Price</Text>
+        <View style={styles.departure}>
+            <Image source={require("../../assets/timee.png")} style={{top:hp(7)}}/>
+            <View style={styles.departCon}>
+              <TextInput placeholder='Enter Desire fare' />
+            </View>
+        </View>
+        <Text style={styles.vehicles}>Any Notes</Text>
+        <View style={styles.departure}>
+            <Image source={require("../../assets/timee.png")} style={{top:hp(7)}}/>
+            <View style={styles.departContainer}>
+              <TextInput placeholder='Enter additional Notes' />
+            </View>
+        </View>
+        <TouchableOpacity style={styles.button}  onPress={() => setModalVisible(true)}>
+            <Text style={styles.buttonText}>Save</Text>
+        </TouchableOpacity>     
+    </ScrollView>
+  )
 }
 
 const styles = StyleSheet.create({
-car:{
-  color:colors.newBlack
-},  
-cancel:{
-  alignSelf:'center',
-  fontSize:12,
-  color:colors.danger,
-  borderColor:colors.danger,
+  button:{
+    justifyContent:'center',
+    alignItems:'center',
+    alignSelf:'center',
+    backgroundColor:colors.blue,
+    width:wp(343),
+    height:hp(50),
+    marginTop:hp(44),
+    borderRadius:5
   },
-contain: {
-  marginTop:hp(34),
-},
-container: {
-  flex: 1,
-},
-headed:{
-  left:wp(33)
-},
-line: {
-  marginTop: wp(13)
-},
-lines: {
-  marginTop: wp(19),
-  alignSelf:'center',
-  height:hp(5), 
-  width:wp(135), 
-  backgroundColor:colors.black
-},
-naira:{
-  color:colors.newBlack
-},
-seat:{
-  color:colors.newBlack
-},
-text:{
-  fontSize:17,
-  fontWeight:'600',
+  buttonText:{
+    color:colors.white,
+    fontSize:17,
+    fontWeight:'600',
+    lineHeight:22
+  },
+centeredView: {
+    flex: 1,
+    shadowColor: colors.primary,
+     backgroundColor:colors.newColors,
+    opacity:0.8
+  },
+  container:{
+    height:hp(883),
+    flex:1
+  },
+depart:{
+  marginTop:hp(37),
+  marginLeft:wp(19),
   lineHeight:22,
-  color:colors.white
+  fontSize:17,
+  color:colors.newColor
 },
-touch:{  
-  marginTop:hp(255),
+departCon:{
+  flexDirection:'row', 
+  paddingLeft:wp(16),
+  borderRadius:5,
+  height:hp(46),
+  width:wp(299),
+  left:wp(16),
+  backgroundColor:colors.box
+},
+departContainer:{
+  flexDirection:'row', 
+  paddingLeft:wp(16),
+  borderRadius:5,
+  height:hp(116),
+  width:wp(299),
+  left:wp(16),
+  backgroundColor:colors.box
+},
+departure:{
+flexDirection: 'row', 
+marginTop:hp(10), 
+marginLeft:wp(16)
+},
+Image:{
+  width:wp(36),
+  height:hp(48),
+  marginTop:hp(32),
+  marginLeft:wp(151)
+},
+line:{
+  borderStyle: 'dotted',
+  borderEndWidth:1,
+  borderEndColor:colors.blue,
+  height:hp(35.5),
   alignSelf:'center',
-  alignItems:'center',
-  justifyContent:'center',
-  height:hp(50), 
-  width:wp(343), 
-  backgroundColor: colors.blue,  
-  borderRadius: wp(5),
+  paddingLeft:wp(210)
+},
+  openButton:{   
+    width:wp(134),
+    height:hp(39), 
+    backgroundColor: colors.blue, 
+    alignSelf:'center'
+},
+  textStyle: {
+    color:colors.new_gray,
+    fontSize:15,
+    textAlign: "center",
+    lineHeight:20
   },
- untouch:{
-  borderColor: colors.danger,
-}
+  modalText: {
+    marginTop: hp(18.5),
+    textAlign: "center",
+    fontSize:20,
+    lineHeight:23,
+    color:colors.newBlack
+  },
+  modalStyle:{
+    width:wp(284),
+    height:hp(60),
+    marginLeft:wp(25),
+    marginTop:hp(7)
+  },
+  modalView:{
+    marginTop:hp(266),
+    marginLeft:wp(19),
+    backgroundColor: "white",
+    borderRadius: 10,
+    height: hp(345),
+    width:wp(336),
+    // justifyContent: 'center',
+    // alignItems: "center",
+  },
+  vehicle:{
+    marginLeft:wp(19),
+    marginTop:hp(19),
+    fontSize:15,
+    lineHeight:22
+  },
+  vehicles:{
+    marginLeft:wp(19),
+    marginTop:hp(19),
+    fontSize:17,
+    lineHeight:22
+  }
 });
+
+
+

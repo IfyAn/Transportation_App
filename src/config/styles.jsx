@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
   centeredView: {
     flex: 1,
-    shadowColor: colors.primary
+    shadowColor: colors.primary,
   },
   con:{
     flexDirection:'row', 
@@ -112,7 +112,6 @@ marginLeft:wp(15),
   height:hp(169),
   width:wp(344),
   backgroundColor:colors.white
-
   },
   Contain: {
  marginTop:25,

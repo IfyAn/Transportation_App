@@ -25,7 +25,14 @@ export default {
     lightBlack: '#000000',
     lightAsh: '#EFEFF4',
     ground: '#F9F9F9',
-    lowGray: '#3C3C43'
+    lowGray: '#3C3C43',
+    newColor: 'rgba(0, 0, 0, 1)',
+    newColors: 'rgba(0, 0, 0, 3)',
+    box:'rgba(249, 249, 249, 1)',
+    new_gray: 'rgba(88, 111, 148, 1)'
+
+
+
 
 
 
